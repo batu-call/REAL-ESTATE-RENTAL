@@ -22,19 +22,15 @@ const Rent = () => {
   const { filter } = useFilter();
 
    useEffect(() => {
-    const fetchHomesAndRentals = async () => {
-      const { data: homesData, error: homesError } = await supabase
-        .from('homes')
-        .select('*')
+    const fetchRentals = async () => {
 
       const { data: rentalsData, error: rentalsError } = await supabase
         .from('rentals')
         .select('*')
 
-      if (homesError) console.error('Homes Error:', homesError)
       if (rentalsError) console.error('Rentals Error:', rentalsError)
 
-      const combined = [...(homesData || []), ...(rentalsData || [])]
+      const combined = [ ...(rentalsData || [])]
 
       // created_at
       combined.sort((a, b) =>
@@ -44,7 +40,7 @@ const Rent = () => {
       setHomes(combined)
     }
 
-    fetchHomesAndRentals()
+    fetchRentals()
   }, [])
 
   const filteredHomes = homes.filter((home) => {
