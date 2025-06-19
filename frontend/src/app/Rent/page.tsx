@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase.js'
 import Image from 'next/image'
 import { useHomeModel } from '../contex/HomeModalContext'
-import HomeDetailModal from '../HomeModel/page'
+import HomeDetailModal from '../HomeModel/homeModel'
 import { useFilter } from "@/app/contex/FilterContext";
 
 type Home = {
