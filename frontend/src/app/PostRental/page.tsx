@@ -93,9 +93,9 @@ const PostRental = () => {
 
        if (error) {
       console.error('Rental insert error:', error.message);
-      toast(`İlan eklenemedi: ${error.message}`);
+      toast(`Ad could not be added: ${error.message}`);
     } else {
-      toast.success('İlan başarıyla eklendi!');
+      toast.success('Ad added successfully!');
       setTitle('');
       setDescription('');
       setPrice('');

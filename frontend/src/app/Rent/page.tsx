@@ -61,7 +61,7 @@ const Rent = () => {
 
   return (
     <>    
-     <div className='mt-28 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 font-inter animated delay-100'>
+     <div className='mt-28 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 font-inter animated delay-100 overflow-hidden justify-center'>
       {filteredHomes.map((h) => (
         <div key={h.id} 
         className='m-3 shadow-lg  p-8 hover:translate-y-0.5 cursor-pointer max-w-[520px]'
@@ -82,7 +82,7 @@ const Rent = () => {
             />
             </div>
           )}
-          <div className=' justify-center ml-10'>
+          <div className='justify-center ml-10'>
           <div className='mt-2'> 
           <p className='mt-5 text-color3 text-md text-shadow whitespace-nowrap overflow-hidden text-ellipsis line-clamp-2 w-[300px]'>{h.description}</p>
           </div>
