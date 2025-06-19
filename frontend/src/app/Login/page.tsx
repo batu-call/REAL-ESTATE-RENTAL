@@ -47,8 +47,8 @@ const Page = () => {
       </div>
       {/* Login Form */}
       <div className='bg-[#111c1e] w-full lg:w-1/2'>
-        <div className='ml-8 lg:ml-72 mt-20 lg:mt-72 font-bold text-2xl'>
-          <h3 className='text-color2 inline-block lg:ml-38 ml-38'>Login</h3>
+        <div className='ml-8 mr-8 lg:ml-72 mt-20 lg:mt-72 font-bold text-2xl'>
+          <h3 className='text-color2 inline-block lg:ml-38 ml-32'>Login</h3>
 
           <div className="grid w-full max-w-sm items-center gap-1.5 mt-12">
             <Label htmlFor="email" className='text-color'>Email</Label>

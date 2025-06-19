@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Main = () => {
   return ( 
-    <div className='mt-24 h-[90vh] relative w-full anime delay-14' >
+    <div className='mt-24 h-[90vh] relative anime delay-14 mr-12' >
       <div className='w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mt-24 leading-loose z-10 absolute top-8 text-center sm:text-left'>
         <h3 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-color ml-16 text-shadow-lg font-bold animated delay-100 text-wrap'>
             Find Your Perfect Rental Home Today

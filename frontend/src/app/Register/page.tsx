@@ -85,8 +85,8 @@ const Page = () => {
        {/* Register Main  */}
       <div className='lg:w-1/2 w-full bg-[#111c1e]'>
       
-      <div className='ml-8 lg:ml-72 mt-20 lg:mt-32 font-bold text-2xl'>
-      <h3 className='text-color2 lg:ml-38 inline-block ml-38'>Register</h3>
+      <div className='ml-8 mr-8 lg:ml-72 mt-20 lg:mt-32 font-bold text-2xl'>
+      <h3 className='text-color2 lg:ml-38 inline-block ml-28'>Register</h3>
 
 
 
