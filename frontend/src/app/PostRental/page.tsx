@@ -177,11 +177,28 @@ const PostRental = () => {
             <Label>Location</Label>
             <Input value={location} onChange={(e) => setLocation(e.target.value)} />
           </div>
-          <div>
-            <Label>Upload Image</Label>
-            <Input type="file" onChange={(e) => setImageFile(e.target.files?.[0] || null) }  />
-            
-          </div>
+           <div>
+      <Label htmlFor="file-upload" className="block mb-2 cursor-pointer text-primary">
+        Upload Image
+      </Label>
+
+      <input
+        id="file-upload"
+        type="file"
+        className="hidden "
+        onChange={(e) => setImageFile(e.target.files?.[0] || null)}
+      />
+      <Button
+        variant="outline"
+        onClick={() => {
+          const input = document.getElementById('file-upload')
+          input?.click()
+        }}
+        className='text-color3 cursor-pointer'
+      >
+        {imageFile ? imageFile.name : "Choose File"}
+      </Button>
+    </div>
           <Button className="w-full mt-4 cursor-pointer" onClick={handlerPostRent}>
             Publish Listing
           </Button>
